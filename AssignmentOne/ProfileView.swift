@@ -16,6 +16,7 @@ struct ProfileView: View {
                     .fontWeight(.bold)
                     
             }
+            .background((Color(.systemGray6)))
         }
         
 }

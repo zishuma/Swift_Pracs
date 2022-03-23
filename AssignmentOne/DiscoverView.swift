@@ -13,11 +13,11 @@ struct SingleNav : View {
     var body: some View {
         Image(systemName: "\(pic)")
             .font(.system(size: 15.0))
-            .padding(.leading, 3)
+            .frame(width: 1)
             .foregroundColor(Color(.systemBlue))
-            
+            .offset(x: 10)
         Text("\(text)")
-            .padding(.leading, 3)
+            .offset(x: 25)
     }
 }
 
@@ -30,7 +30,7 @@ struct DiscoverView: View {
                     .navigationBarTitleDisplayMode(.inline)
                 
                 List{
-                    NavigationLink(destination: EmptyView()){
+                    NavigationLink(destination: MessageView()){
                         SingleNav(text: "朋友圈", pic: "circle.circle.fill")
                     }
                     NavigationLink(destination: EmptyView()){
@@ -39,6 +39,7 @@ struct DiscoverView: View {
                     NavigationLink(destination: EmptyView()){
                         SingleNav(text: "小程序", pic: "circle.dashed")
                     }
+                    
                 }
                 
             }

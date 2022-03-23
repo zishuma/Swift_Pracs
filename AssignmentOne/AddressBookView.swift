@@ -15,6 +15,7 @@ struct AddressBookView: View {
                     .foregroundColor(Color(.systemGray))
                     .fontWeight(.bold)
         }
+            .background((Color(.systemGray6)))
     }
 }
 

@@ -18,6 +18,7 @@
 		AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */; };
 		AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACD27EAFDD700965B8D /* ProfileView.swift */; };
 		AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACF27EB03FD00965B8D /* FootTabView.swift */; };
+		AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAD127EB0BDA00965B8D /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookView.swift; sourceTree = "<group>"; };
 		AF3DBACD27EAFDD700965B8D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AF3DBACF27EB03FD00965B8D /* FootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootTabView.swift; sourceTree = "<group>"; };
+		AF3DBAD127EB0BDA00965B8D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */,
 				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
 				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
+				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
 				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
 				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
 				AF3DBAC927EAF86000965B8D /* WechatView.swift */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */,
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
 				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
 				AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */,

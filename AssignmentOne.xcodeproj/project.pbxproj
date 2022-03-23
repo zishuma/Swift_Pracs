@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */; };
-		AF3DBAA027EAC09C00965B8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBA9F27EAC09C00965B8D /* ContentView.swift */; };
 		AF3DBAA227EAC09E00965B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3DBAA127EAC09E00965B8D /* Assets.xcassets */; };
 		AF3DBAA527EAC09E00965B8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3DBAA427EAC09E00965B8D /* Preview Assets.xcassets */; };
 		AF3DBAAF27EAC09E00965B8D /* AssignmentOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAAE27EAC09E00965B8D /* AssignmentOneTests.swift */; };
 		AF3DBAB927EAC09F00965B8D /* AssignmentOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAB827EAC09F00965B8D /* AssignmentOneUITests.swift */; };
 		AF3DBABB27EAC09F00965B8D /* AssignmentOneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBABA27EAC09F00965B8D /* AssignmentOneUITestsLaunchTests.swift */; };
+		AF3DBAC827EAE4F400965B8D /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */; };
+		AF3DBACA27EAF86000965B8D /* WechatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAC927EAF86000965B8D /* WechatView.swift */; };
+		AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */; };
+		AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACD27EAFDD700965B8D /* ProfileView.swift */; };
+		AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACF27EB03FD00965B8D /* FootTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		AF3DBA9A27EAC09C00965B8D /* AssignmentOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentOneApp.swift; sourceTree = "<group>"; };
-		AF3DBA9F27EAC09C00965B8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF3DBAA127EAC09E00965B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF3DBAA427EAC09E00965B8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF3DBAAA27EAC09E00965B8D /* AssignmentOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,11 @@
 		AF3DBAB427EAC09F00965B8D /* AssignmentOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3DBAB827EAC09F00965B8D /* AssignmentOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentOneUITests.swift; sourceTree = "<group>"; };
 		AF3DBABA27EAC09F00965B8D /* AssignmentOneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentOneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		AF3DBAC927EAF86000965B8D /* WechatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatView.swift; sourceTree = "<group>"; };
+		AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookView.swift; sourceTree = "<group>"; };
+		AF3DBACD27EAFDD700965B8D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AF3DBACF27EB03FD00965B8D /* FootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */,
-				AF3DBA9F27EAC09C00965B8D /* ContentView.swift */,
+				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
+				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
+				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
+				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
+				AF3DBAC927EAF86000965B8D /* WechatView.swift */,
 				AF3DBAA127EAC09E00965B8D /* Assets.xcassets */,
 				AF3DBAA327EAC09E00965B8D /* Preview Content */,
 			);
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3DBAA027EAC09C00965B8D /* ContentView.swift in Sources */,
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
+				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
+				AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */,
+				AF3DBACA27EAF86000965B8D /* WechatView.swift in Sources */,
+				AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */,
+				AF3DBAC827EAE4F400965B8D /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

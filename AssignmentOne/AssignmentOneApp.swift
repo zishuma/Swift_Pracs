@@ -11,7 +11,7 @@ import SwiftUI
 struct AssignmentOneApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FootTabView()
         }
     }
 }

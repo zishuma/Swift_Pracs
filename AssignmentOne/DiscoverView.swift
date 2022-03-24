@@ -25,10 +25,6 @@ struct DiscoverView: View {
     var body: some View {
         NavigationView{
             VStack {
-                Text("发现")
-                    .fontWeight(.bold)
-                    .navigationBarTitleDisplayMode(.inline)
-                
                 List{
                     NavigationLink(destination: MessageView()){
                         SingleNav(text: "朋友圈", pic: "circle.circle.fill")
@@ -41,13 +37,11 @@ struct DiscoverView: View {
                     }
                     
                 }
+                .navigationTitle("发现")
+                .navigationBarTitleDisplayMode(.inline)
                 
             }
-            .background((Color(.systemGray6)))
-            .padding(.top, -25)
-            Spacer()
         }
-        .ignoresSafeArea(edges: .top)
 }
 }
 

@@ -9,13 +9,13 @@ import SwiftUI
 
 struct AddressBookView: View {
     var body: some View {
-            ZStack{
-                Color(.systemGray6)
-                Text("通讯录页面")
-                    .foregroundColor(Color(.systemGray))
-                    .fontWeight(.bold)
+        ZStack{
+            Color(.systemGray6)
+            Text("通讯录页面")
+                .foregroundColor(Color(.systemGray))
+                .fontWeight(.bold)
         }
-            .background((Color(.systemGray6)))
+        .background((Color(.systemGray6)))
     }
 }
 

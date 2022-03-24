@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-            ZStack{
-                Color(.systemGray6)
-                Text("我页面")
-                    .foregroundColor(Color(.systemGray))
-                    .fontWeight(.bold)
-                    
-            }
-            .background((Color(.systemGray6)))
+        ZStack{
+            Color(.systemGray6)
+            Text("我页面")
+                .foregroundColor(Color(.systemGray))
+                .fontWeight(.bold)
+            
         }
-        
+        .background((Color(.systemGray6)))
+    }
+    
 }
 
 struct ProfileView_Previews: PreviewProvider {

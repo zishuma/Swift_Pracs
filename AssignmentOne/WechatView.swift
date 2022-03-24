@@ -9,14 +9,14 @@ import SwiftUI
 
 struct WechatView: View {
     var body: some View {
-            ZStack{
-                Color(.systemGray6)
-                Text("微信页面")
-                    .foregroundColor(Color(.systemGray))
-                    .fontWeight(.bold)
-                    
-            }
-            .background((Color(.systemGray6)))
+        ZStack{
+            Color(.systemGray6)
+            Text("微信页面")
+                .foregroundColor(Color(.systemGray))
+                .fontWeight(.bold)
+            
+        }
+        .background((Color(.systemGray6)))
         
     }
 }

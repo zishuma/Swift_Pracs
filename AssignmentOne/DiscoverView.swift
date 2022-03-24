@@ -17,32 +17,30 @@ struct SingleNav : View {
             .foregroundColor(Color(.systemBlue))
             .offset(x: 10)
         Text("\(text)")
-            .offset(x: 25)
+            .offset(x: 30)
     }
 }
 
 struct DiscoverView: View {
     var body: some View {
         NavigationView{
-            VStack {
-                List{
-                    NavigationLink(destination: MessageView()){
-                        SingleNav(text: "朋友圈", pic: "circle.circle.fill")
-                    }
-                    NavigationLink(destination: EmptyView()){
-                        SingleNav(text: "游戏", pic: "gamecontroller.fill")
-                    }
-                    NavigationLink(destination: EmptyView()){
-                        SingleNav(text: "小程序", pic: "circle.dashed")
-                    }
-                    
+            List{
+                NavigationLink(destination: MessageView()){
+                    SingleNav(text: "朋友圈", pic: "circle.circle.fill")
                 }
-                .navigationTitle("发现")
-                .navigationBarTitleDisplayMode(.inline)
+                NavigationLink(destination: EmptyView()){
+                    SingleNav(text: "游戏", pic: "gamecontroller.fill")
+                }
+                NavigationLink(destination: EmptyView()){
+                    SingleNav(text: "小程序", pic: "circle.dashed")
+                }
                 
             }
+            .navigationTitle("发现")
+            .navigationBarTitleDisplayMode(.inline)
+            
         }
-}
+    }
 }
 
 struct DiscoverView_Previews: PreviewProvider {

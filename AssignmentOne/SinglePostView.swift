@@ -23,6 +23,7 @@ struct SinglePostView: View {
                 if let im = msg.imag {
                     Image("\(im)")
                 }
+                
                 if let fo = msg.follower {
                     ZStack{
                         Color.gray

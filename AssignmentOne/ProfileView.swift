@@ -23,7 +23,7 @@ struct ProfileView: View {
                             .foregroundColor(.black)
                         Spacer()
                         Image(systemName: "chevron.right")
-                            .padding()
+                            .padding(.top, 30)
                             .foregroundColor(.gray)
                     }
                     .padding()

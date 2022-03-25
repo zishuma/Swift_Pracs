@@ -45,6 +45,7 @@ struct MessageView: View {
         ScrollView(.vertical){
             ZStack{
                 Image("view")
+                    .resizable()
                     .overlay(UserImage(), alignment: .bottomTrailing)
                     .frame(minWidth: 0, maxWidth: .infinity)
             }

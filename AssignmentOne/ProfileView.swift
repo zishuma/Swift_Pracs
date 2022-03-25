@@ -12,13 +12,13 @@ struct ProfileView: View {
     @EnvironmentObject var ownModel : OwnerModel
     
     var body: some View {
-        VStack{
-            NavigationView{
+        NavigationView{
+            VStack{
                 NavigationLink(destination: PersonalView()){
                     HStack(alignment: .top) {
                         Image(ownModel.avatar)
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 70, height: 70)
                         Text(ownModel.name)
                             .foregroundColor(.black)
                         Spacer()
@@ -31,11 +31,11 @@ struct ProfileView: View {
                 .background(Color.white.ignoresSafeArea())
                 .navigationTitle("我")
                 .navigationBarTitleDisplayMode(.inline)
+                Spacer()
             }
-            .frame(height: 150)
-            Spacer()
         }
     }
+    
     
 }
 

@@ -7,22 +7,34 @@
 
 import SwiftUI
 
+
 struct ProfileView: View {
+    @EnvironmentObject var ownModel : OwnerModel
+    
     var body: some View {
-        ZStack{
-            Color(.systemGray6)
-            Text("我页面")
-                .foregroundColor(Color(.systemGray))
-                .fontWeight(.bold)
-            
+        NavigationView{
+            List{
+                NavigationLink(destination: PersonalView()){
+                    HStack(alignment: .top) {
+                        Image(ownModel.avatar)
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        Text(ownModel.name)
+                        Spacer()
+                    }
+                }
+            }
+            .background(Color.white.ignoresSafeArea())
+            .navigationTitle("我")
+            .navigationBarTitleDisplayMode(.inline)
+           Spacer()
         }
-        .background((Color(.systemGray6)))
     }
     
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView().environmentObject(OwnerModel(avatar: "profile", name: "桃子猪"))
     }
 }

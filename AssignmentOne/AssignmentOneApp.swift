@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AssignmentOneApp: App {
+    @StateObject var ownerModel : OwnerModel = OwnerModel(avatar: "profile", name: "桃子猪")
+    
     var body: some Scene {
         WindowGroup {
             FootTabView()
+                .environmentObject(ownerModel)
         }
     }
 }

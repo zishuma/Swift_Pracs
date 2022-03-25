@@ -7,27 +7,19 @@
 
 import SwiftUI
 
-struct Message : Identifiable {
-    var id : String
-    var pic : String
-    var name : String
-    var description : String
-    var imag : String?
-    var follower : String?
-    
-}
-
 
 struct UserImage : View {
+    @EnvironmentObject var ownerModel : OwnerModel
+    
     var body: some View {
         HStack{
             Spacer()
-            Text("桃子猪")
+            Text(ownerModel.name)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-            Image("profile")
+            Image(ownerModel.avatar)
         }
-        .offset(x: -40)
+        .offset(x: -20)
         .offset(y: 20)
     }
 }
@@ -41,6 +33,7 @@ struct MessageView: View {
             ZStack{
                 Image("view")
                     .resizable()
+                    .scaledToFit()
                     .overlay(UserImage(), alignment: .bottomTrailing)
                     .frame(minWidth: 0, maxWidth: .infinity)
             }

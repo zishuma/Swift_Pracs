@@ -17,3 +17,13 @@ class MessageModel : ObservableObject {
         Message(id: "6", pic: "profileSmall", name: "桃子猪", description: "救命，生活费见底了！", imag: "moment", follower: "草莓🐰")
     ]
 }
+
+struct Message : Identifiable {
+    var id : String
+    var pic : String
+    var name : String
+    var description : String
+    var imag : String?
+    var follower : String?
+    
+}

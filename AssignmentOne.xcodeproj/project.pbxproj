@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2C8E1B27ED612300D9BBCB /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */; };
+		AF2C8E1D27ED61F900D9BBCB /* SinglePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */; };
 		AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */; };
 		AF3DBAA227EAC09E00965B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3DBAA127EAC09E00965B8D /* Assets.xcassets */; };
 		AF3DBAA527EAC09E00965B8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3DBAA427EAC09E00965B8D /* Preview Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostView.swift; sourceTree = "<group>"; };
 		AF3DBA9A27EAC09C00965B8D /* AssignmentOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentOneApp.swift; sourceTree = "<group>"; };
 		AF3DBAA127EAC09E00965B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
 				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
 				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
+				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
+				AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */,
 				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
 				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
 				AF3DBAC927EAF86000965B8D /* WechatView.swift */,
@@ -275,6 +281,8 @@
 				AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */,
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
 				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
+				AF2C8E1D27ED61F900D9BBCB /* SinglePostView.swift in Sources */,
+				AF2C8E1B27ED612300D9BBCB /* MessageModel.swift in Sources */,
 				AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */,
 				AF3DBACA27EAF86000965B8D /* WechatView.swift in Sources */,
 				AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */,

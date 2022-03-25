@@ -7,8 +7,11 @@
 
 import SwiftUI
 
+
+
 struct PersonalView: View {
     @EnvironmentObject var ownerModel : OwnerModel
+    @State var changeAvatar = false
     
     var body: some View {
         VStack{
@@ -20,9 +23,17 @@ struct PersonalView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar{
             Button{
-                ownerModel.changeAvatar()
+                changeAvatar = true
             }label: {
                 Image(systemName: "ellipsis")
+            }
+            .confirmationDialog("Change background", isPresented: $changeAvatar) {
+                Button("修改头像") {
+                    ownerModel.changeAvatar()
+                }
+                Button("Cancel", role: .cancel) { }
+            } message: {
+                Text("更多")
             }
         }
     }

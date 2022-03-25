@@ -17,10 +17,10 @@ import Foundation
     }
     
     func changeAvatar() {
-        if self.avatar == "viewSmall" {
+        if self.avatar == "viewProfile" {
             self.avatar = "profile"
         } else {
-            self.avatar = "viewSmall"
+            self.avatar = "viewProfile"
         }
     }
 }

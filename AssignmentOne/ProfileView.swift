@@ -12,22 +12,28 @@ struct ProfileView: View {
     @EnvironmentObject var ownModel : OwnerModel
     
     var body: some View {
-        NavigationView{
-            List{
+        VStack{
+            NavigationView{
                 NavigationLink(destination: PersonalView()){
                     HStack(alignment: .top) {
                         Image(ownModel.avatar)
                             .resizable()
                             .frame(width: 50, height: 50)
                         Text(ownModel.name)
+                            .foregroundColor(.black)
                         Spacer()
+                        Image(systemName: "chevron.right")
+                            .padding()
+                            .foregroundColor(.gray)
                     }
+                    .padding()
                 }
+                .background(Color.white.ignoresSafeArea())
+                .navigationTitle("我")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .background(Color.white.ignoresSafeArea())
-            .navigationTitle("我")
-            .navigationBarTitleDisplayMode(.inline)
-           Spacer()
+            .frame(height: 150)
+            Spacer()
         }
     }
     

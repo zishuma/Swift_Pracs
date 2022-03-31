@@ -18,8 +18,9 @@ struct PostImagesView: View {
                         image.resizable()
                     }placeholder: {
                         ProgressView()
-                    }
-                
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity, maxHeight: 200)
+                    }                    
                 }
             }
                 .scaledToFit()

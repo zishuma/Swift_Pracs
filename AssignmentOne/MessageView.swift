@@ -25,8 +25,8 @@ struct UserImage : View {
             }
             .frame(width: 50, height: 50)
         }
-        .offset(x: -20)
-        .offset(y: 20)
+        .offset(x: -0)
+        .offset(y: 0)
     }
 }
 
@@ -47,11 +47,12 @@ struct MessageView: View {
                 }placeholder: {
                     ProgressView()
                         .scaledToFit()
-                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: 400)
                 }
                 .scaledToFit()
                 .overlay(UserImage(name: name, avatar: avatar), alignment: .bottomTrailing)
-                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: 300)
+                .clipped()
                 
                 
             }

@@ -19,9 +19,12 @@ struct PostImagesView: View {
                     }placeholder: {
                         ProgressView()
                     }
-                    .frame(width: 80, height: 80)
+                
                 }
             }
+                .scaledToFit()
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                .clipped()
         }else {
             Text("too many images!!!")
         }

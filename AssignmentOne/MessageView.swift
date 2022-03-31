@@ -42,8 +42,12 @@ struct MessageView: View {
                 let avatar = profileViewModel.user.avatar
                 AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
                     image.resizable()
+                        .scaledToFit()
+                        .frame(minWidth: 0, maxWidth: .infinity)
                 }placeholder: {
                     ProgressView()
+                        .scaledToFit()
+                        .frame(minWidth: 0, maxWidth: .infinity)
                 }
                 .scaledToFit()
                 .overlay(UserImage(name: name, avatar: avatar), alignment: .bottomTrailing)

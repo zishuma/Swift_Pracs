@@ -10,14 +10,19 @@ import SwiftUI
 
 
 struct PersonalView: View {
-    @EnvironmentObject var ownerModel : OwnerModel
+ //   @EnvironmentObject var ownerModel : OwnerModel
+    @StateObject var profileViewModel: ProfileViewModel = .init()
     @State var changeAvatar = false
     
     var body: some View {
         VStack{
-            Image(ownerModel.avatar)
-                .resizable()
-                .scaledToFit()
+            AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
+                image.resizable()
+                    .scaledToFit()
+            }placeholder: {
+                ProgressView()
+            }
+           
         }
         .navigationTitle("个人")
         .navigationBarTitleDisplayMode(.inline)
@@ -28,9 +33,6 @@ struct PersonalView: View {
                 Image(systemName: "ellipsis")
             }
             .confirmationDialog("Change background", isPresented: $changeAvatar) {
-                Button("修改头像") {
-                    ownerModel.changeAvatar()
-                }
                 Button("Cancel", role: .cancel) { }
             } message: {
                 Text("更多")
@@ -41,6 +43,6 @@ struct PersonalView: View {
 
 struct PersonalView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalView().environmentObject(OwnerModel(avatar: "profile", name: "桃子猪"))
+        PersonalView()
     }
 }

@@ -29,7 +29,6 @@ import Combine
             .sink(receiveCompletion: {
                 completion in
             }, receiveValue: { value in
-                print(value)
                 self.messages.removeAll()
                 self.messages.append(contentsOf: value)
             })
@@ -42,7 +41,5 @@ struct Message : Identifiable, Codable {
     var id : Int
     var content : String?
     var images : [ImageURL]?
-    
-    var sender: Sender?
-        
+    var sender: Sender?        
 }

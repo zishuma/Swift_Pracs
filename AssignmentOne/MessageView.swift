@@ -9,15 +9,22 @@ import SwiftUI
 
 
 struct UserImage : View {
-    @EnvironmentObject var ownerModel : OwnerModel
+    // @EnvironmentObject var ownerModel : OwnerModel
+    var name: String
+    var avatar: String
     
     var body: some View {
         HStack{
             Spacer()
-            Text(ownerModel.name)
+            Text(name)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-            Image(ownerModel.avatar)
+            AsyncImage(url: URL(string: avatar)){ image in
+                image.resizable()
+            }placeholder: {
+                ProgressView()
+            }
+            .frame(width: 50, height: 50)
         }
         .offset(x: -20)
         .offset(y: 20)
@@ -27,15 +34,23 @@ struct UserImage : View {
 struct MessageView: View {
     
     @StateObject var messageModel : MessageModel = MessageModel()
+    @StateObject var profileViewModel: ProfileViewModel = ProfileViewModel()
     
     var body: some View {
         ScrollView(.vertical){
             ZStack{
-                Image("view")
-                    .resizable()
-                    .scaledToFit()
-                    .overlay(UserImage(), alignment: .bottomTrailing)
-                    .frame(minWidth: 0, maxWidth: .infinity)
+                let name = profileViewModel.user.nick
+                let avatar = profileViewModel.user.avatar
+                AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
+                    image.resizable()
+                }placeholder: {
+                    ProgressView()
+                }
+                .scaledToFit()
+                .overlay(UserImage(name: name, avatar: avatar), alignment: .bottomTrailing)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                
+                
             }
             LazyVStack(alignment: .leading) {
                 ForEach(messageModel.messages){ msg in

@@ -9,17 +9,23 @@ import SwiftUI
 
 
 struct ProfileView: View {
-    @EnvironmentObject var ownModel : OwnerModel
+   // @EnvironmentObject var ownModel : OwnerModel
+    @StateObject var profileViewModel: ProfileViewModel = .init()
     
     var body: some View {
         NavigationView{
             VStack{
                 NavigationLink(destination: PersonalView()){
-                    HStack(alignment: .top) {
-                        Image(ownModel.avatar)
-                            .resizable()
-                            .frame(width: 70, height: 70)
-                        Text(ownModel.name)
+                    HStack(alignment: .center) {
+                        AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
+                            image.resizable()
+                        }placeholder: {
+                            ProgressView()
+                        }
+                        .frame(width: 70, height: 70)
+                        
+                        
+                        Text(profileViewModel.user.nick)
                             .foregroundColor(.black)
                         Spacer()
                         Image(systemName: "chevron.right")

@@ -27,6 +27,7 @@
 		AF64B38327F5770700BAB831 /* SenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38227F5770700BAB831 /* SenderModel.swift */; };
 		AF64B38527F5922000BAB831 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38427F5922000BAB831 /* ImageURL.swift */; };
 		AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38627F592B400BAB831 /* PostImagesView.swift */; };
+		AF64B38927F59CE800BAB831 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		AF64B38227F5770700BAB831 /* SenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderModel.swift; sourceTree = "<group>"; };
 		AF64B38427F5922000BAB831 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 		AF64B38627F592B400BAB831 /* PostImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImagesView.swift; sourceTree = "<group>"; };
+		AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				AF64B38027F5754300BAB831 /* SearchResult.swift */,
 				AF64B38227F5770700BAB831 /* SenderModel.swift */,
 				AF64B38427F5922000BAB831 /* ImageURL.swift */,
+				AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */,
 				AF3DBAC827EAE4F400965B8D /* DiscoverView.swift in Sources */,
 				AF64B38127F5754300BAB831 /* SearchResult.swift in Sources */,
+				AF64B38927F59CE800BAB831 /* ProfileViewModel.swift in Sources */,
 				AF2C8E2127ED8FB000D9BBCB /* OwnerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

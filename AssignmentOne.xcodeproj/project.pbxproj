@@ -23,6 +23,10 @@
 		AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACD27EAFDD700965B8D /* ProfileView.swift */; };
 		AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACF27EB03FD00965B8D /* FootTabView.swift */; };
 		AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAD127EB0BDA00965B8D /* MessageView.swift */; };
+		AF64B38127F5754300BAB831 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38027F5754300BAB831 /* SearchResult.swift */; };
+		AF64B38327F5770700BAB831 /* SenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38227F5770700BAB831 /* SenderModel.swift */; };
+		AF64B38527F5922000BAB831 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38427F5922000BAB831 /* ImageURL.swift */; };
+		AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38627F592B400BAB831 /* PostImagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		AF3DBACD27EAFDD700965B8D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AF3DBACF27EB03FD00965B8D /* FootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootTabView.swift; sourceTree = "<group>"; };
 		AF3DBAD127EB0BDA00965B8D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		AF64B38027F5754300BAB831 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		AF64B38227F5770700BAB831 /* SenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderModel.swift; sourceTree = "<group>"; };
+		AF64B38427F5922000BAB831 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
+		AF64B38627F592B400BAB831 /* PostImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,16 +120,16 @@
 		AF3DBA9C27EAC09C00965B8D /* AssignmentOne */ = {
 			isa = PBXGroup;
 			children = (
+				AF64B37F27F5730100BAB831 /* Model */,
 				AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */,
 				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
 				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
 				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
 				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
-				AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */,
+				AF64B38627F592B400BAB831 /* PostImagesView.swift */,
 				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
 				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
 				AF2C8E1E27ED8E3900D9BBCB /* PersonalView.swift */,
-				AF2C8E2027ED8FB000D9BBCB /* OwnerModel.swift */,
 				AF3DBAC927EAF86000965B8D /* WechatView.swift */,
 				AF3DBAA127EAC09E00965B8D /* Assets.xcassets */,
 				AF3DBAA327EAC09E00965B8D /* Preview Content */,
@@ -152,6 +160,18 @@
 				AF3DBABA27EAC09F00965B8D /* AssignmentOneUITestsLaunchTests.swift */,
 			);
 			path = AssignmentOneUITests;
+			sourceTree = "<group>";
+		};
+		AF64B37F27F5730100BAB831 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C8E2027ED8FB000D9BBCB /* OwnerModel.swift */,
+				AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */,
+				AF64B38027F5754300BAB831 /* SearchResult.swift */,
+				AF64B38227F5770700BAB831 /* SenderModel.swift */,
+				AF64B38427F5922000BAB831 /* ImageURL.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,9 +311,13 @@
 				AF2C8E1D27ED61F900D9BBCB /* SinglePostView.swift in Sources */,
 				AF2C8E1B27ED612300D9BBCB /* MessageModel.swift in Sources */,
 				AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */,
+				AF64B38527F5922000BAB831 /* ImageURL.swift in Sources */,
+				AF64B38327F5770700BAB831 /* SenderModel.swift in Sources */,
 				AF3DBACA27EAF86000965B8D /* WechatView.swift in Sources */,
 				AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */,
+				AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */,
 				AF3DBAC827EAE4F400965B8D /* DiscoverView.swift in Sources */,
+				AF64B38127F5754300BAB831 /* SearchResult.swift in Sources */,
 				AF2C8E2127ED8FB000D9BBCB /* OwnerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

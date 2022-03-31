@@ -26,7 +26,7 @@ struct UserImage : View {
 
 struct MessageView: View {
     
-    @StateObject var messageModel = MessageModel()
+    @StateObject var messageModel : MessageModel = MessageModel()
     
     var body: some View {
         ScrollView(.vertical){

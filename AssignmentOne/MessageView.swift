@@ -9,7 +9,6 @@ import SwiftUI
 
 
 struct UserImage : View {
-    // @EnvironmentObject var ownerModel : OwnerModel
     var name: String
     var avatar: String
     

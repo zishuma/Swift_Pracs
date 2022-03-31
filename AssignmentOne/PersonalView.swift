@@ -10,7 +10,6 @@ import SwiftUI
 
 
 struct PersonalView: View {
- //   @EnvironmentObject var ownerModel : OwnerModel
     @StateObject var profileViewModel: ProfileViewModel = .init()
     @State var changeAvatar = false
     

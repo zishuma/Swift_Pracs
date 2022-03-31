@@ -9,7 +9,6 @@ import SwiftUI
 
 
 struct ProfileView: View {
-   // @EnvironmentObject var ownModel : OwnerModel
     @StateObject var profileViewModel: ProfileViewModel = .init()
     
     var body: some View {
@@ -47,6 +46,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView().environmentObject(OwnerModel(avatar: "profile", name: "桃子猪"))
+        ProfileView()
     }
 }

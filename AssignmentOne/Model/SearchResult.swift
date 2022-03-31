@@ -8,5 +8,5 @@
 import Foundation
 
 struct SearchResult: Codable {
-    let items: [Message]?
+    let items: [Message]
 }

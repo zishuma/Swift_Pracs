@@ -14,9 +14,10 @@ struct ClipImageView: View {
         AsyncImage(url: URL(string: image)){ image in
             image.resizable()
                 .aspectRatio(1.0, contentMode: .fit)
+                .frame(maxWidth: .infinity, maxHeight: 100)
         }placeholder: {
             ImagePlaceholderView()
-                .scaledToFill()
+                .aspectRatio(1.0, contentMode: .fit)
                 .frame(maxWidth: .infinity, maxHeight: 100)
         }
         .frame(maxWidth: .infinity, maxHeight: 100)

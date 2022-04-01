@@ -12,7 +12,6 @@ struct ImagePlaceholderView: View {
         ZStack{
             Image("placeholder")
                 .resizable()
-                .scaledToFill()
             ProgressView()
         }
     }

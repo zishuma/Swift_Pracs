@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Sender : Codable {
+struct Sender : Codable, Hashable {
     let username: String
     let nick: String
     let avatar: String

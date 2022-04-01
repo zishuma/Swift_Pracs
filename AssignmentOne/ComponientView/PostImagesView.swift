@@ -12,15 +12,18 @@ struct PostImagesView: View {
     
     var body: some View {
         if pics.count < 2 {
-            AsyncImage(url: URL(string: "\(pics[0].url)")){ image in
-                image.resizable()
-            }placeholder: {
-                ProgressView()
-                    .scaledToFit()
-                    .frame(maxWidth: .infinity, maxHeight: 200)
+            VStack(alignment: .leading){
+                AsyncImage(url: URL(string: "\(pics[0].url)")){ image in
+                    image.resizable()
+                }placeholder: {
+                    ProgressView()
+                        .scaledToFit()
+                        .frame(maxWidth: .infinity, maxHeight: 200)
+                }
+                .scaledToFit()
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                
             }
-            .scaledToFit()
-            .frame(maxWidth: .infinity, maxHeight: 200)
         }
         else if pics.count < 4 {
             HStack{

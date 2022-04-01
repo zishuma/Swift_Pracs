@@ -33,19 +33,13 @@ struct SinglePostView: View {
                         PostImagesView(pics: pics)
                     }
                     
-    //                if let fo = msg.follower {
-    //                    ZStack{
-    //                        Color.gray
-    //                        HStack{
-    //                            Image(systemName: "suit.heart")
-    //                                .foregroundColor(.white)
-    //                            Text("\(fo)")
-    //                                .foregroundColor(.white)
-    //                            Spacer()
-    //                        }
-    //                    }
-    //
-    //                }
+                    if let followers = msg.comments {
+                        ForEach(followers, id: \.self){ comment in
+                            Text("\(comment.sender.nick): \(comment.content)")
+                                .foregroundColor(.secondary)
+                                .font(.system(size: 13.0))
+                        }
+                    }
                 }
                 Spacer()
             }
@@ -57,6 +51,6 @@ struct SinglePostView: View {
 struct SinglePostView_Previews: PreviewProvider {
     static var previews: some View {
         SinglePostView(msg: Message(id: 1, content: "wtf", sender: Sender(username: "ankdla", nick: "桃子猪", avatar: "https://thoughtworks-mobile-2018.herokuapp.com/images/user/avatar/001.jpeg"))
-)
+        )
     }
 }

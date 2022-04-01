@@ -28,6 +28,7 @@
 		AF64B38927F59CE800BAB831 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */; };
 		AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38A27F697EC00BAB831 /* ClipImageView.swift */; };
 		AF64B38E27F6C6B500BAB831 /* UserBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38D27F6C6B500BAB831 /* UserBanner.swift */; };
+		AF64B39027F6CC1F00BAB831 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38F27F6CC1F00BAB831 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		AF64B38A27F697EC00BAB831 /* ClipImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipImageView.swift; sourceTree = "<group>"; };
 		AF64B38D27F6C6B500BAB831 /* UserBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBanner.swift; sourceTree = "<group>"; };
+		AF64B38F27F6CC1F00BAB831 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */,
+				AF64B38F27F6CC1F00BAB831 /* Comment.swift */,
 				AF64B38227F5770700BAB831 /* SenderModel.swift */,
 				AF64B38427F5922000BAB831 /* ImageURL.swift */,
 				AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */,
@@ -320,6 +323,7 @@
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
 				AF2C8E1F27ED8E3900D9BBCB /* PersonalView.swift in Sources */,
 				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
+				AF64B39027F6CC1F00BAB831 /* Comment.swift in Sources */,
 				AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */,
 				AF2C8E1D27ED61F900D9BBCB /* SinglePostView.swift in Sources */,
 				AF2C8E1B27ED612300D9BBCB /* MessageModel.swift in Sources */,

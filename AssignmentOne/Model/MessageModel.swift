@@ -45,5 +45,6 @@ struct Message : Identifiable, Codable {
     var id : Int
     var content : String?
     var images : [ImageURL]?
-    var sender: Sender?        
+    var sender: Sender?
+    var comments: [Comment]?
 }

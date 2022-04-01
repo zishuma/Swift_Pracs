@@ -15,14 +15,13 @@ struct PostImagesView: View {
             VStack(alignment: .leading){
                 AsyncImage(url: URL(string: "\(pics[0].url)")){ image in
                     image.resizable()
-                }placeholder: {
-                    ProgressView()
                         .scaledToFit()
-                        .frame(maxWidth: .infinity, maxHeight: 200)
+                }placeholder: {
+                    ImagePlaceholderView()
+                        .frame(maxHeight: 200)
                 }
-                .scaledToFit()
-                .frame(maxWidth: .infinity, maxHeight: 200)
-                
+                .frame(maxHeight: 200)
+                .clipped()
             }
         }
         else if pics.count < 4 {

@@ -16,9 +16,11 @@ struct SinglePostView: View {
                 AsyncImage(url: URL(string: owner.avatar)){ image in
                     image.resizable()
                 }placeholder: {
-                    ProgressView()
+                    ImagePlaceholderView()
+                        .scaledToFill()
                 }
                 .frame(width: 50, height: 50)
+                .clipped()
                 
                 VStack(alignment: .leading){
                     Text("\(owner.nick)")

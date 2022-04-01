@@ -20,12 +20,14 @@ struct UserImage : View {
             AsyncImage(url: URL(string: avatar)){ image in
                 image.resizable()
             }placeholder: {
-                ProgressView()
+                ImagePlaceholderView()
+                    .scaledToFill()
             }
-            .frame(width: 50, height: 50)
+            .frame(width: 80, height: 80)
+            .clipped()
         }
-        .offset(x: -0)
-        .offset(y: 0)
+        .offset(y: 30)
+        .padding()
     }
 }
 

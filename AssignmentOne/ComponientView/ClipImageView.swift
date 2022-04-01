@@ -15,10 +15,12 @@ struct ClipImageView: View {
             image.resizable()
                 .aspectRatio(1.0, contentMode: .fit)
         }placeholder: {
-            ProgressView()
-                .scaledToFit()
-                .frame(maxWidth: .infinity, maxHeight: 300)
+            ImagePlaceholderView()
+                .scaledToFill()
+                .frame(maxWidth: .infinity, maxHeight: 100)
         }
+        .frame(maxWidth: .infinity, maxHeight: 100)
+        .clipped()
     }
 }
 

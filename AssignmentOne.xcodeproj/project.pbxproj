@@ -29,6 +29,7 @@
 		AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38A27F697EC00BAB831 /* ClipImageView.swift */; };
 		AF64B38E27F6C6B500BAB831 /* UserBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38D27F6C6B500BAB831 /* UserBanner.swift */; };
 		AF64B39027F6CC1F00BAB831 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38F27F6CC1F00BAB831 /* Comment.swift */; };
+		AF64B39227F6D76F00BAB831 /* ImagePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		AF64B38A27F697EC00BAB831 /* ClipImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipImageView.swift; sourceTree = "<group>"; };
 		AF64B38D27F6C6B500BAB831 /* UserBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBanner.swift; sourceTree = "<group>"; };
 		AF64B38F27F6CC1F00BAB831 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePlaceholderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				AF64B38A27F697EC00BAB831 /* ClipImageView.swift */,
 				AF64B38627F592B400BAB831 /* PostImagesView.swift */,
 				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
+				AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */,
 			);
 			path = ComponientView;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */,
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
 				AF2C8E1F27ED8E3900D9BBCB /* PersonalView.swift in Sources */,
+				AF64B39227F6D76F00BAB831 /* ImagePlaceholderView.swift in Sources */,
 				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
 				AF64B39027F6CC1F00BAB831 /* Comment.swift in Sources */,
 				AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */,

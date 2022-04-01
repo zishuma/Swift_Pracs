@@ -19,8 +19,10 @@ struct PersonalView: View {
                 image.resizable()
                     .scaledToFit()
             }placeholder: {
-                ProgressView()
+                ImagePlaceholderView()
+                    .scaledToFill()
             }
+            .frame(maxHeight: 400)
            
         }
         .navigationTitle("个人")

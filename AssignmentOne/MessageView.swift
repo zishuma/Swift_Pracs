@@ -22,14 +22,13 @@ struct MessageView: View {
                         .scaledToFit()
                         .frame(minWidth: 0, maxWidth: .infinity)
                 }placeholder: {
-                    ProgressView()
-                        .scaledToFit()
+                    ImagePlaceholderView()
+                        .scaledToFill()
                         .frame(maxWidth: .infinity, maxHeight: 400)
                 }
                 .scaledToFit()
                 .overlay(UserImage(name: name, avatar: avatar), alignment: .bottomTrailing)
                 .frame(maxWidth: .infinity, maxHeight: 300)
-                .clipped()
                 
                 
             }

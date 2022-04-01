@@ -19,9 +19,11 @@ struct ProfileView: View {
                         AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
                             image.resizable()
                         }placeholder: {
-                            ProgressView()
+                            ImagePlaceholderView()
+                                .scaledToFill()
                         }
                         .frame(width: 70, height: 70)
+                        .clipped()
                         
                         
                         Text(profileViewModel.user.nick)

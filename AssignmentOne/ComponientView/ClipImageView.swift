@@ -20,7 +20,6 @@ struct ClipImageView: View {
                 .aspectRatio(1.0, contentMode: .fit)
                 .frame(maxWidth: .infinity, maxHeight: 100)
         }
-        .frame(maxWidth: .infinity, maxHeight: 100)
         .clipped()
     }
 }

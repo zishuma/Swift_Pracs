@@ -29,8 +29,12 @@ import Combine
             .sink(receiveCompletion: {
                 completion in
             }, receiveValue: { value in
+                let filtered = value
+                    .filter{ msg in
+                        return !(msg.content == nil && msg.images == nil)
+                    }
                 self.messages.removeAll()
-                self.messages.append(contentsOf: value)
+                self.messages.append(contentsOf: filtered)
             })
             .store(in: &self.timeLines)
     }

@@ -7,29 +7,6 @@
 
 import SwiftUI
 
-
-struct UserImage : View {
-    var name: String
-    var avatar: String
-    
-    var body: some View {
-        HStack{
-            Spacer()
-            Text(name)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-            AsyncImage(url: URL(string: avatar)){ image in
-                image.resizable()
-            }placeholder: {
-                ProgressView()
-            }
-            .frame(width: 50, height: 50)
-        }
-        .offset(x: -0)
-        .offset(y: 0)
-    }
-}
-
 struct MessageView: View {
     
     @StateObject var messageModel : MessageModel = MessageModel()

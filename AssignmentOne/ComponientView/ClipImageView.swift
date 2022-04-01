@@ -17,7 +17,7 @@ struct ClipImageView: View {
         }placeholder: {
             ProgressView()
                 .scaledToFit()
-                .frame(maxWidth: .infinity, maxHeight: 200)
+                .frame(maxWidth: .infinity, maxHeight: 300)
         }
     }
 }

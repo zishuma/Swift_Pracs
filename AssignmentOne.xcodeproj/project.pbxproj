@@ -27,6 +27,7 @@
 		AF64B38527F5922000BAB831 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38427F5922000BAB831 /* ImageURL.swift */; };
 		AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38627F592B400BAB831 /* PostImagesView.swift */; };
 		AF64B38927F59CE800BAB831 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */; };
+		AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38A27F697EC00BAB831 /* ClipImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		AF64B38427F5922000BAB831 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
 		AF64B38627F592B400BAB831 /* PostImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImagesView.swift; sourceTree = "<group>"; };
 		AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		AF64B38A27F697EC00BAB831 /* ClipImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +122,12 @@
 		AF3DBA9C27EAC09C00965B8D /* AssignmentOne */ = {
 			isa = PBXGroup;
 			children = (
+				AF64B38C27F697F800BAB831 /* ComponientView */,
 				AF64B37F27F5730100BAB831 /* Model */,
 				AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */,
 				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
 				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
 				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
-				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
-				AF64B38627F592B400BAB831 /* PostImagesView.swift */,
 				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
 				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
 				AF2C8E1E27ED8E3900D9BBCB /* PersonalView.swift */,
@@ -172,6 +173,16 @@
 				AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AF64B38C27F697F800BAB831 /* ComponientView */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B38A27F697EC00BAB831 /* ClipImageView.swift */,
+				AF64B38627F592B400BAB831 /* PostImagesView.swift */,
+				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
+			);
+			path = ComponientView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
 				AF2C8E1F27ED8E3900D9BBCB /* PersonalView.swift in Sources */,
 				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
+				AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */,
 				AF2C8E1D27ED61F900D9BBCB /* SinglePostView.swift in Sources */,
 				AF2C8E1B27ED612300D9BBCB /* MessageModel.swift in Sources */,
 				AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */,

@@ -40,7 +40,7 @@ struct MessageView: View {
             ZStack{
                 let name = profileViewModel.user.nick
                 let avatar = profileViewModel.user.avatar
-                AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
+                AsyncImage(url: URL(string: profileViewModel.user.profileimage)){ image in
                     image.resizable()
                         .scaledToFit()
                         .frame(minWidth: 0, maxWidth: .infinity)

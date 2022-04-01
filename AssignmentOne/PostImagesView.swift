@@ -16,16 +16,17 @@ struct PostImagesView: View {
                 ForEach(pics, id: \.self){pic in
                     AsyncImage(url: URL(string: pic.url)){ image in
                         image.resizable()
+                            .scaledToFit()
+                            //.clipped()
                     }placeholder: {
                         ProgressView()
                             .scaledToFit()
                             .frame(maxWidth: .infinity, maxHeight: 200)
-                    }                    
+                    }
                 }
             }
                 .scaledToFit()
                 .frame(maxWidth: .infinity, maxHeight: 200)
-                .clipped()
         }else {
             Text("too many images!!!")
         }

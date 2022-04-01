@@ -31,7 +31,7 @@ import Combine
                 completion in
             }, receiveValue: { value in
                 print(value)
-                self.user = User(profileimage: "", avatar: value.avatar, nick: value.nick, username: value.username)
+                self.user = User(profileimage: value.profileimage, avatar: value.avatar, nick: value.nick, username: value.username)
             })
             .store(in: &self.value)
     }

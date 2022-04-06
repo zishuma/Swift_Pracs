@@ -50,6 +50,7 @@
 		AF64B3D927FD7C0500BAB831 /* MessageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3D827FD7C0500BAB831 /* MessageHeaderView.swift */; };
 		AF64B3DB27FD7C7500BAB831 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */; };
 		AF64B3DD27FD7FB700BAB831 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */; };
+		AF64B3DF27FD917200BAB831 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DE27FD917200BAB831 /* CommentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		AF64B3D827FD7C0500BAB831 /* MessageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHeaderView.swift; sourceTree = "<group>"; };
 		AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		AF64B3DE27FD917200BAB831 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
 				AF64B3D827FD7C0500BAB831 /* MessageHeaderView.swift */,
 				AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */,
+				AF64B3DE27FD917200BAB831 /* CommentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				AF64B38327F5770700BAB831 /* SenderModel.swift in Sources */,
 				AF3DBACA27EAF86000965B8D /* WechatView.swift in Sources */,
 				AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */,
+				AF64B3DF27FD917200BAB831 /* CommentView.swift in Sources */,
 				AF64B3C227FD66B800BAB831 /* UserRepoImpl.swift in Sources */,
 				AF64B3D427FD69CE00BAB831 /* TweetsUseCaseImpl.swift in Sources */,
 				AF64B3D927FD7C0500BAB831 /* MessageHeaderView.swift in Sources */,

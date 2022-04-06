@@ -37,9 +37,7 @@ struct SinglePostView: View {
                     
                     if let followers = msg.comments {
                         ForEach(followers, id: \.self){ comment in
-                            Text("\(comment.sender.nick): \(comment.content)")
-                                .foregroundColor(.secondary)
-                                .font(.system(size: 13.0))
+                            CommentView(comment: comment)
                         }
                     }
                 }

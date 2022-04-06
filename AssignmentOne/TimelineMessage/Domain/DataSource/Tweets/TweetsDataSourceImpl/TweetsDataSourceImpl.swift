@@ -15,7 +15,9 @@ final class TweetsDataSourceImpl: TweetsDataSource {
         self.wechatAPI = wechatAPI
     }
     
-    func getTweets() -> AnyPublisher<[Message], URLError> {
+    func getTweets() -> AnyPublisher<[Message], TweetsDataSourceError> {
         return wechatAPI.retrieveTweetsInfo()
+            .mapError({ _ in TweetsDataSourceError.internalError })
+            .eraseToAnyPublisher()
     }
 }

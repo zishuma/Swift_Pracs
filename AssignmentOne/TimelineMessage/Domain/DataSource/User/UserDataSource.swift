@@ -7,7 +7,12 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 protocol UserDataSource {
-    func getCurrentUser() -> AnyPublisher<User, URLError>
+    func getCurrentUser() -> AnyPublisher<User, UserDataSourceError>
+}
+
+enum UserDataSourceError: Error {
+    case internalError
 }

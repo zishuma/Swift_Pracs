@@ -9,6 +9,10 @@ import Foundation
 import Combine
 
 protocol WechatAPI {
-    func retrieveUserInfo() -> AnyPublisher<User, URLError>
-    func retrieveTweetsInfo() -> AnyPublisher<[Message], URLError>
+    func retrieveUserInfo() -> AnyPublisher<User, WechatAPIError>
+    func retrieveTweetsInfo() -> AnyPublisher<[Message], WechatAPIError>
+}
+
+enum WechatAPIError: Error {
+    case internalError
 }

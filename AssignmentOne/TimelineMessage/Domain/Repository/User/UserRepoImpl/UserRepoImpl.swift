@@ -15,7 +15,9 @@ final class UserRepoImpl: UserRepo {
         self.userDataSource = userDataSource
     }
     
-    func getCurrentUser() -> AnyPublisher<User, URLError> {
+    func getCurrentUser() -> AnyPublisher<User, UserRepoError> {
         return userDataSource.getCurrentUser()
+            .mapError({ _ in UserRepoError.internalError })
+            .eraseToAnyPublisher()
     }
 }

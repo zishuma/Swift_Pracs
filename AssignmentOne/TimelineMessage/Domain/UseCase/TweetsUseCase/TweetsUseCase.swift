@@ -9,5 +9,9 @@ import Foundation
 import Combine
 
 protocol TweetsUseCase {
-    func retrieveAllTweets() -> AnyPublisher<[Message], URLError>
+    func retrieveAllTweets() -> AnyPublisher<[Message], TweetsUserCaseError>
+}
+
+enum TweetsUserCaseError: Error {
+    case internalError
 }

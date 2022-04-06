@@ -15,7 +15,9 @@ final class UserUseCaseImpl: UserUseCase {
         self.userRepo = userRepo
     }
     
-    func retrieveCurrentUser() -> AnyPublisher<User, URLError> {
+    func retrieveCurrentUser() -> AnyPublisher<User, UserUseCaseError> {
         return userRepo.getCurrentUser()
+            .mapError({ _ in UserUseCaseError.internalError })
+            .eraseToAnyPublisher()
     }
 }

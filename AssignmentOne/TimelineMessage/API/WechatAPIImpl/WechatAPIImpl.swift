@@ -11,7 +11,7 @@ import Combine
 final class WechatAPIImpl : WechatAPI {
     
     
-    func retrieveUserInfo() -> AnyPublisher<User, URLError> {
+    func retrieveUserInfo() -> AnyPublisher<User, WechatAPIError> {
         return URLSession.shared.dataTaskPublisher(for: URL(string: "https://thoughtworks-mobile-2018.herokuapp.com/user/jsmith")!)
             .map{$0.data}
             .flatMap{ data in
@@ -24,11 +24,12 @@ final class WechatAPIImpl : WechatAPI {
             .compactMap{
                 $0
             }
+            .mapError({ _ in WechatAPIError.internalError })
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
     
-    func retrieveTweetsInfo() -> AnyPublisher<[Message], URLError> {
+    func retrieveTweetsInfo() -> AnyPublisher<[Message], WechatAPIError> {
         return URLSession.shared.dataTaskPublisher(for: URL(string: "https://thoughtworks-mobile-2018.herokuapp.com/user/jsmith/tweets")!)
             .map{$0.data}
             .flatMap{ data in
@@ -41,6 +42,7 @@ final class WechatAPIImpl : WechatAPI {
             .compactMap{
                 $0
             }
+            .mapError({ _ in WechatAPIError.internalError })
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

@@ -9,5 +9,9 @@ import Foundation
 import Combine
 
 protocol TweetsRepo {
-    func getTweets() -> AnyPublisher<[Message], URLError>
+    func getTweets() -> AnyPublisher<[Message], TweetsRepoError>
+}
+
+enum TweetsRepoError: Error {
+    case internalError
 }

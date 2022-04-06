@@ -15,7 +15,9 @@ final class TweetsUseCaseImpl: TweetsUseCase{
         self.tweetsRepo = tweetsRepo
     }
     
-    func retrieveAllTweets() -> AnyPublisher<[Message], URLError> {
+    func retrieveAllTweets() -> AnyPublisher<[Message], TweetsUserCaseError> {
         return tweetsRepo.getTweets()
+            .mapError({ _ in TweetsUserCaseError.internalError })
+            .eraseToAnyPublisher()
     }
 }

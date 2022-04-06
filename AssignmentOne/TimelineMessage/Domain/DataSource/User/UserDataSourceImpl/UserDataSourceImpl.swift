@@ -15,7 +15,9 @@ final class UserDataSourceImpl : UserDataSource {
         self.wechatAPI = wechatAPI
     }
     
-    func getCurrentUser() -> AnyPublisher<User, URLError> {
+    func getCurrentUser() -> AnyPublisher<User, UserDataSourceError> {
         return wechatAPI.retrieveUserInfo()
+            .mapError({ _ in UserDataSourceError.internalError })
+            .eraseToAnyPublisher()
     }
 }

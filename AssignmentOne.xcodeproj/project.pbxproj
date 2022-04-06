@@ -214,7 +214,6 @@
 		AF64B39427FD566400BAB831 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				AF64B39627FD571200BAB831 /* Model */,
 				AF64B39527FD570A00BAB831 /* View */,
 			);
 			path = Profile;
@@ -228,13 +227,6 @@
 				AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AF64B39627FD571200BAB831 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		AF64B39727FD57B000BAB831 /* Application */ = {

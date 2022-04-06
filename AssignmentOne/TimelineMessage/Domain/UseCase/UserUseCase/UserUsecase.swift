@@ -9,5 +9,9 @@ import Foundation
 import Combine
 
 protocol UserUseCase {
-    func retrieveCurrentUser() -> AnyPublisher<User, URLError>
+    func retrieveCurrentUser() -> AnyPublisher<User, UserUseCaseError>
+}
+
+enum UserUseCaseError: Error {
+    case internalError
 }

@@ -15,7 +15,9 @@ final class TweetsRepoImpl: TweetsRepo{
         self.tweetsDataSource = tweetsDataSource
     }
     
-    func getTweets() -> AnyPublisher<[Message], URLError> {
+    func getTweets() -> AnyPublisher<[Message], TweetsRepoError> {
         return tweetsDataSource.getTweets()
+            .mapError({ _ in TweetsRepoError.internalError })
+            .eraseToAnyPublisher()
     }
 }

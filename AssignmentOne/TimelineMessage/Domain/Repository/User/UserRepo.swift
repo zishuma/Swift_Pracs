@@ -9,5 +9,9 @@ import Foundation
 import Combine
 
 protocol UserRepo{
-    func getCurrentUser() -> AnyPublisher<User, URLError>
+    func getCurrentUser() -> AnyPublisher<User, UserRepoError>
+}
+
+enum UserRepoError: Error {
+    case internalError
 }

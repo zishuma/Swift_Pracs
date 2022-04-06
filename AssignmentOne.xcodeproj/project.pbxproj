@@ -23,13 +23,33 @@
 		AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBACF27EB03FD00965B8D /* FootTabView.swift */; };
 		AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3DBAD127EB0BDA00965B8D /* MessageView.swift */; };
 		AF64B38327F5770700BAB831 /* SenderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38227F5770700BAB831 /* SenderModel.swift */; };
-		AF64B38527F5922000BAB831 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38427F5922000BAB831 /* ImageURL.swift */; };
+		AF64B38527F5922000BAB831 /* ImageURLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38427F5922000BAB831 /* ImageURLModel.swift */; };
 		AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38627F592B400BAB831 /* PostImagesView.swift */; };
 		AF64B38927F59CE800BAB831 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */; };
 		AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38A27F697EC00BAB831 /* ClipImageView.swift */; };
 		AF64B38E27F6C6B500BAB831 /* UserBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38D27F6C6B500BAB831 /* UserBanner.swift */; };
-		AF64B39027F6CC1F00BAB831 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38F27F6CC1F00BAB831 /* Comment.swift */; };
+		AF64B39027F6CC1F00BAB831 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B38F27F6CC1F00BAB831 /* CommentModel.swift */; };
 		AF64B39227F6D76F00BAB831 /* ImagePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */; };
+		AF64B3A827FD5E7A00BAB831 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3A727FD5E7A00BAB831 /* UserModel.swift */; };
+		AF64B3AA27FD5EB500BAB831 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3A927FD5EB500BAB831 /* Message.swift */; };
+		AF64B3AC27FD5F5200BAB831 /* WechatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3AB27FD5F5200BAB831 /* WechatAPI.swift */; };
+		AF64B3AF27FD604000BAB831 /* WechatAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3AE27FD604000BAB831 /* WechatAPIImpl.swift */; };
+		AF64B3B427FD637D00BAB831 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3B327FD637D00BAB831 /* UserDataSource.swift */; };
+		AF64B3B727FD63CD00BAB831 /* UserDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3B627FD63CD00BAB831 /* UserDataSourceImpl.swift */; };
+		AF64B3B927FD658200BAB831 /* TweetsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3B827FD658200BAB831 /* TweetsDataSource.swift */; };
+		AF64B3BC27FD65C800BAB831 /* TweetsDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3BB27FD65C800BAB831 /* TweetsDataSourceImpl.swift */; };
+		AF64B3BF27FD667300BAB831 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3BE27FD667300BAB831 /* UserRepo.swift */; };
+		AF64B3C227FD66B800BAB831 /* UserRepoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3C127FD66B800BAB831 /* UserRepoImpl.swift */; };
+		AF64B3C527FD67A500BAB831 /* TweetsRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3C427FD67A500BAB831 /* TweetsRepo.swift */; };
+		AF64B3C827FD67E000BAB831 /* TweetsRepoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3C727FD67E000BAB831 /* TweetsRepoImpl.swift */; };
+		AF64B3CB27FD68E000BAB831 /* UserUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3CA27FD68E000BAB831 /* UserUsecase.swift */; };
+		AF64B3CE27FD692500BAB831 /* UserUserCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3CD27FD692500BAB831 /* UserUserCaseImpl.swift */; };
+		AF64B3D127FD698800BAB831 /* TweetsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3D027FD698800BAB831 /* TweetsUseCase.swift */; };
+		AF64B3D427FD69CE00BAB831 /* TweetsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3D327FD69CE00BAB831 /* TweetsUseCaseImpl.swift */; };
+		AF64B3D727FD77C100BAB831 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3D627FD77C100BAB831 /* DependencyInjection.swift */; };
+		AF64B3D927FD7C0500BAB831 /* MessageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3D827FD7C0500BAB831 /* MessageHeaderView.swift */; };
+		AF64B3DB27FD7C7500BAB831 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */; };
+		AF64B3DD27FD7FB700BAB831 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +89,33 @@
 		AF3DBACF27EB03FD00965B8D /* FootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootTabView.swift; sourceTree = "<group>"; };
 		AF3DBAD127EB0BDA00965B8D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		AF64B38227F5770700BAB831 /* SenderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderModel.swift; sourceTree = "<group>"; };
-		AF64B38427F5922000BAB831 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
+		AF64B38427F5922000BAB831 /* ImageURLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLModel.swift; sourceTree = "<group>"; };
 		AF64B38627F592B400BAB831 /* PostImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImagesView.swift; sourceTree = "<group>"; };
 		AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		AF64B38A27F697EC00BAB831 /* ClipImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipImageView.swift; sourceTree = "<group>"; };
 		AF64B38D27F6C6B500BAB831 /* UserBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBanner.swift; sourceTree = "<group>"; };
-		AF64B38F27F6CC1F00BAB831 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		AF64B38F27F6CC1F00BAB831 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePlaceholderView.swift; sourceTree = "<group>"; };
+		AF64B3A727FD5E7A00BAB831 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		AF64B3A927FD5EB500BAB831 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AF64B3AB27FD5F5200BAB831 /* WechatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatAPI.swift; sourceTree = "<group>"; };
+		AF64B3AE27FD604000BAB831 /* WechatAPIImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatAPIImpl.swift; sourceTree = "<group>"; };
+		AF64B3B327FD637D00BAB831 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		AF64B3B627FD63CD00BAB831 /* UserDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSourceImpl.swift; sourceTree = "<group>"; };
+		AF64B3B827FD658200BAB831 /* TweetsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsDataSource.swift; sourceTree = "<group>"; };
+		AF64B3BB27FD65C800BAB831 /* TweetsDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsDataSourceImpl.swift; sourceTree = "<group>"; };
+		AF64B3BE27FD667300BAB831 /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		AF64B3C127FD66B800BAB831 /* UserRepoImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoImpl.swift; sourceTree = "<group>"; };
+		AF64B3C427FD67A500BAB831 /* TweetsRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRepo.swift; sourceTree = "<group>"; };
+		AF64B3C727FD67E000BAB831 /* TweetsRepoImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRepoImpl.swift; sourceTree = "<group>"; };
+		AF64B3CA27FD68E000BAB831 /* UserUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsecase.swift; sourceTree = "<group>"; };
+		AF64B3CD27FD692500BAB831 /* UserUserCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUserCaseImpl.swift; sourceTree = "<group>"; };
+		AF64B3D027FD698800BAB831 /* TweetsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsUseCase.swift; sourceTree = "<group>"; };
+		AF64B3D327FD69CE00BAB831 /* TweetsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsUseCaseImpl.swift; sourceTree = "<group>"; };
+		AF64B3D627FD77C100BAB831 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		AF64B3D827FD7C0500BAB831 /* MessageHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHeaderView.swift; sourceTree = "<group>"; };
+		AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,16 +166,12 @@
 		AF3DBA9C27EAC09C00965B8D /* AssignmentOne */ = {
 			isa = PBXGroup;
 			children = (
-				AF64B38C27F697F800BAB831 /* ComponientView */,
-				AF64B37F27F5730100BAB831 /* Model */,
-				AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */,
-				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
-				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
-				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
-				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
-				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
-				AF2C8E1E27ED8E3900D9BBCB /* PersonalView.swift */,
-				AF3DBAC927EAF86000965B8D /* WechatView.swift */,
+				AF64B39F27FD5AF900BAB831 /* ContactBook */,
+				AF64B39D27FD5ACE00BAB831 /* Chat */,
+				AF64B39A27FD585600BAB831 /* TimelineMessage */,
+				AF64B39727FD57B000BAB831 /* Application */,
+				AF64B39427FD566400BAB831 /* Profile */,
+				AF64B39327FD565600BAB831 /* Discovery */,
 				AF3DBAA127EAC09E00965B8D /* Assets.xcassets */,
 				AF3DBAA327EAC09E00965B8D /* Preview Content */,
 			);
@@ -167,28 +203,308 @@
 			path = AssignmentOneUITests;
 			sourceTree = "<group>";
 		};
-		AF64B37F27F5730100BAB831 /* Model */ = {
+		AF64B39327FD565600BAB831 /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
-				AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */,
-				AF64B38F27F6CC1F00BAB831 /* Comment.swift */,
-				AF64B38227F5770700BAB831 /* SenderModel.swift */,
-				AF64B38427F5922000BAB831 /* ImageURL.swift */,
-				AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */,
+				AF64B39927FD583E00BAB831 /* View */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		AF64B39427FD566400BAB831 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B39627FD571200BAB831 /* Model */,
+				AF64B39527FD570A00BAB831 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AF64B39527FD570A00BAB831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C8E1E27ED8E3900D9BBCB /* PersonalView.swift */,
+				AF3DBACD27EAFDD700965B8D /* ProfileView.swift */,
+				AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF64B39627FD571200BAB831 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AF64B38C27F697F800BAB831 /* ComponientView */ = {
+		AF64B39727FD57B000BAB831 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				AF64B38D27F6C6B500BAB831 /* UserBanner.swift */,
-				AF64B38A27F697EC00BAB831 /* ClipImageView.swift */,
-				AF64B38627F592B400BAB831 /* PostImagesView.swift */,
-				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
-				AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */,
+				AF64B39827FD57C900BAB831 /* View */,
 			);
-			path = ComponientView;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AF64B39827FD57C900BAB831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF3DBACF27EB03FD00965B8D /* FootTabView.swift */,
+				AF3DBA9D27EAC09C00965B8D /* AssignmentOneApp.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF64B39927FD583E00BAB831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF3DBAC727EAE4F400965B8D /* DiscoverView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF64B39A27FD585600BAB831 /* TimelineMessage */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3D527FD77A300BAB831 /* DependencyInjection */,
+				AF64B3A327FD5B8C00BAB831 /* Domain */,
+				AF64B3A127FD5B3B00BAB831 /* API */,
+				AF64B39C27FD587100BAB831 /* ViewModel */,
+				AF64B39B27FD586B00BAB831 /* View */,
+			);
+			path = TimelineMessage;
+			sourceTree = "<group>";
+		};
+		AF64B39B27FD586B00BAB831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B39127F6D76F00BAB831 /* ImagePlaceholderView.swift */,
+				AF2C8E1C27ED61F900D9BBCB /* SinglePostView.swift */,
+				AF64B38627F592B400BAB831 /* PostImagesView.swift */,
+				AF64B38A27F697EC00BAB831 /* ClipImageView.swift */,
+				AF64B38D27F6C6B500BAB831 /* UserBanner.swift */,
+				AF3DBAD127EB0BDA00965B8D /* MessageView.swift */,
+				AF64B3D827FD7C0500BAB831 /* MessageHeaderView.swift */,
+				AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF64B39C27FD587100BAB831 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B38827F59CE800BAB831 /* ProfileViewModel.swift */,
+				AF2C8E1A27ED612300D9BBCB /* MessageModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AF64B39D27FD5ACE00BAB831 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B39E27FD5ADF00BAB831 /* View */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		AF64B39E27FD5ADF00BAB831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF3DBAC927EAF86000965B8D /* WechatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF64B39F27FD5AF900BAB831 /* ContactBook */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3A027FD5B0300BAB831 /* View */,
+			);
+			path = ContactBook;
+			sourceTree = "<group>";
+		};
+		AF64B3A027FD5B0300BAB831 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF3DBACB27EAFD7000965B8D /* AddressBookView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF64B3A127FD5B3B00BAB831 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3AD27FD601600BAB831 /* WechatAPIImpl */,
+				AF64B3AB27FD5F5200BAB831 /* WechatAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AF64B3A327FD5B8C00BAB831 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3B027FD635700BAB831 /* DataSource */,
+				AF64B3A627FD5BC700BAB831 /* Model */,
+				AF64B3A527FD5BA000BAB831 /* Repository */,
+				AF64B3A427FD5B9800BAB831 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AF64B3A427FD5B9800BAB831 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3CF27FD697700BAB831 /* TweetsUseCase */,
+				AF64B3C927FD68CD00BAB831 /* UserUseCase */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AF64B3A527FD5BA000BAB831 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3C327FD679500BAB831 /* Tweets */,
+				AF64B3BD27FD666700BAB831 /* User */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AF64B3A627FD5BC700BAB831 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B38427F5922000BAB831 /* ImageURLModel.swift */,
+				AF64B38227F5770700BAB831 /* SenderModel.swift */,
+				AF64B38F27F6CC1F00BAB831 /* CommentModel.swift */,
+				AF64B3A727FD5E7A00BAB831 /* UserModel.swift */,
+				AF64B3A927FD5EB500BAB831 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF64B3AD27FD601600BAB831 /* WechatAPIImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3AE27FD604000BAB831 /* WechatAPIImpl.swift */,
+			);
+			path = WechatAPIImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3B027FD635700BAB831 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3B227FD636400BAB831 /* Tweets */,
+				AF64B3B127FD635F00BAB831 /* User */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		AF64B3B127FD635F00BAB831 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3B527FD63B800BAB831 /* UserDataSourceImpl */,
+				AF64B3B327FD637D00BAB831 /* UserDataSource.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		AF64B3B227FD636400BAB831 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3BA27FD65B300BAB831 /* TweetsDataSourceImpl */,
+				AF64B3B827FD658200BAB831 /* TweetsDataSource.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		AF64B3B527FD63B800BAB831 /* UserDataSourceImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3B627FD63CD00BAB831 /* UserDataSourceImpl.swift */,
+			);
+			path = UserDataSourceImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3BA27FD65B300BAB831 /* TweetsDataSourceImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3BB27FD65C800BAB831 /* TweetsDataSourceImpl.swift */,
+			);
+			path = TweetsDataSourceImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3BD27FD666700BAB831 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3C027FD66AA00BAB831 /* UserRepoImpl */,
+				AF64B3BE27FD667300BAB831 /* UserRepo.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		AF64B3C027FD66AA00BAB831 /* UserRepoImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3C127FD66B800BAB831 /* UserRepoImpl.swift */,
+			);
+			path = UserRepoImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3C327FD679500BAB831 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3C627FD67CF00BAB831 /* TweetsRepoImpl */,
+				AF64B3C427FD67A500BAB831 /* TweetsRepo.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		AF64B3C627FD67CF00BAB831 /* TweetsRepoImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3C727FD67E000BAB831 /* TweetsRepoImpl.swift */,
+			);
+			path = TweetsRepoImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3C927FD68CD00BAB831 /* UserUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3CC27FD691200BAB831 /* UserUseCaseImpl */,
+				AF64B3CA27FD68E000BAB831 /* UserUsecase.swift */,
+			);
+			path = UserUseCase;
+			sourceTree = "<group>";
+		};
+		AF64B3CC27FD691200BAB831 /* UserUseCaseImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3CD27FD692500BAB831 /* UserUserCaseImpl.swift */,
+			);
+			path = UserUseCaseImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3CF27FD697700BAB831 /* TweetsUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3D227FD69BA00BAB831 /* TweetsUseCaseImpl */,
+				AF64B3D027FD698800BAB831 /* TweetsUseCase.swift */,
+			);
+			path = TweetsUseCase;
+			sourceTree = "<group>";
+		};
+		AF64B3D227FD69BA00BAB831 /* TweetsUseCaseImpl */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3D327FD69CE00BAB831 /* TweetsUseCaseImpl.swift */,
+			);
+			path = TweetsUseCaseImpl;
+			sourceTree = "<group>";
+		};
+		AF64B3D527FD77A300BAB831 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				AF64B3D627FD77C100BAB831 /* DependencyInjection.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,24 +637,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF64B3DB27FD7C7500BAB831 /* TimelineView.swift in Sources */,
 				AF64B38E27F6C6B500BAB831 /* UserBanner.swift in Sources */,
 				AF3DBAD227EB0BDA00965B8D /* MessageView.swift in Sources */,
 				AF3DBA9E27EAC09C00965B8D /* AssignmentOneApp.swift in Sources */,
+				AF64B3AC27FD5F5200BAB831 /* WechatAPI.swift in Sources */,
 				AF2C8E1F27ED8E3900D9BBCB /* PersonalView.swift in Sources */,
+				AF64B3C827FD67E000BAB831 /* TweetsRepoImpl.swift in Sources */,
 				AF64B39227F6D76F00BAB831 /* ImagePlaceholderView.swift in Sources */,
+				AF64B3AF27FD604000BAB831 /* WechatAPIImpl.swift in Sources */,
+				AF64B3B727FD63CD00BAB831 /* UserDataSourceImpl.swift in Sources */,
+				AF64B3BC27FD65C800BAB831 /* TweetsDataSourceImpl.swift in Sources */,
+				AF64B3C527FD67A500BAB831 /* TweetsRepo.swift in Sources */,
 				AF3DBAD027EB03FD00965B8D /* FootTabView.swift in Sources */,
-				AF64B39027F6CC1F00BAB831 /* Comment.swift in Sources */,
+				AF64B3D727FD77C100BAB831 /* DependencyInjection.swift in Sources */,
+				AF64B39027F6CC1F00BAB831 /* CommentModel.swift in Sources */,
+				AF64B3BF27FD667300BAB831 /* UserRepo.swift in Sources */,
 				AF64B38B27F697EC00BAB831 /* ClipImageView.swift in Sources */,
+				AF64B3DD27FD7FB700BAB831 /* UserInfoView.swift in Sources */,
 				AF2C8E1D27ED61F900D9BBCB /* SinglePostView.swift in Sources */,
 				AF2C8E1B27ED612300D9BBCB /* MessageModel.swift in Sources */,
 				AF3DBACC27EAFD7000965B8D /* AddressBookView.swift in Sources */,
-				AF64B38527F5922000BAB831 /* ImageURL.swift in Sources */,
+				AF64B38527F5922000BAB831 /* ImageURLModel.swift in Sources */,
+				AF64B3CB27FD68E000BAB831 /* UserUsecase.swift in Sources */,
+				AF64B3D127FD698800BAB831 /* TweetsUseCase.swift in Sources */,
 				AF64B38327F5770700BAB831 /* SenderModel.swift in Sources */,
 				AF3DBACA27EAF86000965B8D /* WechatView.swift in Sources */,
 				AF3DBACE27EAFDD700965B8D /* ProfileView.swift in Sources */,
+				AF64B3C227FD66B800BAB831 /* UserRepoImpl.swift in Sources */,
+				AF64B3D427FD69CE00BAB831 /* TweetsUseCaseImpl.swift in Sources */,
+				AF64B3D927FD7C0500BAB831 /* MessageHeaderView.swift in Sources */,
+				AF64B3B427FD637D00BAB831 /* UserDataSource.swift in Sources */,
+				AF64B3AA27FD5EB500BAB831 /* Message.swift in Sources */,
 				AF64B38727F592B400BAB831 /* PostImagesView.swift in Sources */,
 				AF3DBAC827EAE4F400965B8D /* DiscoverView.swift in Sources */,
+				AF64B3A827FD5E7A00BAB831 /* UserModel.swift in Sources */,
+				AF64B3CE27FD692500BAB831 /* UserUserCaseImpl.swift in Sources */,
 				AF64B38927F59CE800BAB831 /* ProfileViewModel.swift in Sources */,
+				AF64B3B927FD658200BAB831 /* TweetsDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,12 +10,13 @@ import SwiftUI
 
 
 struct PersonalView: View {
-    @StateObject var profileViewModel: ProfileViewModel = .init()
+    var avatar: String
     @State var changeAvatar = false
+    
     
     var body: some View {
         VStack{
-            AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
+            AsyncImage(url: URL(string: avatar)){ image in
                 image.resizable()
                     .scaledToFit()
             }placeholder: {
@@ -43,7 +44,8 @@ struct PersonalView: View {
 }
 
 struct PersonalView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        PersonalView()
+        PersonalView(avatar: "https://thoughtworks-mobile-2018.herokuapp.com/images/user/avatar.png")
     }
 }

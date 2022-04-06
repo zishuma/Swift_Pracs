@@ -1,20 +1,24 @@
 //
-//  ProfileView.swift
+//  UserInfoView.swift
 //  AssignmentOne
 //
-//  Created by Zishu Ma on 2022/3/23.
+//  Created by Zishu Ma on 2022/4/6.
 //
 
 import SwiftUI
 
-
-struct ProfileView: View {
-    @StateObject var profileViewModel: ProfileViewModel = .init()
+struct UserInfoView: View {
+    @StateObject var profileViewModel: ProfileViewModel
+    
+    init(retrieveCurrentUserInfoUsecase: UserUseCase){
+        _profileViewModel = StateObject(wrappedValue: ProfileViewModel(userUseCase: retrieveCurrentUserInfoUsecase))
+    }
+    
     
     var body: some View {
         NavigationView{
             VStack{
-                NavigationLink(destination: PersonalView()){
+                NavigationLink(destination: PersonalView(avatar: profileViewModel.user.avatar)){
                     HStack(alignment: .center) {
                         AsyncImage(url: URL(string: profileViewModel.user.avatar)){ image in
                             image.resizable()
@@ -40,13 +44,10 @@ struct ProfileView: View {
                 Spacer()
             }
         }
+        .onAppear {
+            profileViewModel.loadUser()
+        }
     }
-    
-    
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView()
-    }
-}
+

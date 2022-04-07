@@ -52,6 +52,9 @@
 		AF64B3DD27FD7FB700BAB831 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */; };
 		AF64B3DF27FD917200BAB831 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DE27FD917200BAB831 /* CommentView.swift */; };
 		AFB872A227FEA98600458F40 /* MessageModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB872A127FEA98600458F40 /* MessageModelTest.swift */; };
+		AFB872B127FEB15F00458F40 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = AFB872B027FEB15F00458F40 /* Nimble */; };
+		AFB872B327FEB15F00458F40 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = AFB872B227FEB15F00458F40 /* Quick */; };
+		AFB872BB27FEB36300458F40 /* TweetsRepoImplTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB872BA27FEB36300458F40 /* TweetsRepoImplTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,7 @@
 		AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		AF64B3DE27FD917200BAB831 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		AFB872A127FEA98600458F40 /* MessageModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelTest.swift; sourceTree = "<group>"; };
+		AFB872BA27FEB36300458F40 /* TweetsRepoImplTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRepoImplTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB872B327FEB15F00458F40 /* Quick in Frameworks */,
+				AFB872B127FEB15F00458F40 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +160,7 @@
 				AF3DBAAD27EAC09E00965B8D /* AssignmentOneTests */,
 				AF3DBAB727EAC09F00965B8D /* AssignmentOneUITests */,
 				AF3DBA9B27EAC09C00965B8D /* Products */,
+				AFB872AF27FEB15F00458F40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -516,6 +523,7 @@
 		AFB8729D27FEA4EC00458F40 /* DomainTest */ = {
 			isa = PBXGroup;
 			children = (
+				AFB872B827FEB33100458F40 /* RepositoryTest */,
 				AFB8729E27FEA55500458F40 /* UseCaseTest */,
 			);
 			path = DomainTest;
@@ -545,6 +553,29 @@
 			path = ViewModelTest;
 			sourceTree = "<group>";
 		};
+		AFB872AF27FEB15F00458F40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFB872B827FEB33100458F40 /* RepositoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				AFB872B927FEB34500458F40 /* TweetsRepoTest */,
+			);
+			path = RepositoryTest;
+			sourceTree = "<group>";
+		};
+		AFB872B927FEB34500458F40 /* TweetsRepoTest */ = {
+			isa = PBXGroup;
+			children = (
+				AFB872BA27FEB36300458F40 /* TweetsRepoImplTest.swift */,
+			);
+			path = TweetsRepoTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,6 +592,8 @@
 			dependencies = (
 			);
 			name = AssignmentOne;
+			packageProductDependencies = (
+			);
 			productName = AssignmentOne;
 			productReference = AF3DBA9A27EAC09C00965B8D /* AssignmentOne.app */;
 			productType = "com.apple.product-type.application";
@@ -576,9 +609,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				AFB872B527FEB16800458F40 /* PBXTargetDependency */,
+				AFB872B727FEB16800458F40 /* PBXTargetDependency */,
 				AF3DBAAC27EAC09E00965B8D /* PBXTargetDependency */,
 			);
 			name = AssignmentOneTests;
+			packageProductDependencies = (
+				AFB872B027FEB15F00458F40 /* Nimble */,
+				AFB872B227FEB15F00458F40 /* Quick */,
+			);
 			productName = AssignmentOneTests;
 			productReference = AF3DBAAA27EAC09E00965B8D /* AssignmentOneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -633,6 +672,10 @@
 				Base,
 			);
 			mainGroup = AF3DBA9127EAC09C00965B8D;
+			packageReferences = (
+				AFB872A927FEB11800458F40 /* XCRemoteSwiftPackageReference "Nimble" */,
+				AFB872AC27FEB14F00458F40 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = AF3DBA9B27EAC09C00965B8D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -721,6 +764,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB872BB27FEB36300458F40 /* TweetsRepoImplTest.swift in Sources */,
 				AF3DBAAF27EAC09E00965B8D /* TweetsUseCaseTests.swift in Sources */,
 				AFB872A227FEA98600458F40 /* MessageModelTest.swift in Sources */,
 			);
@@ -747,6 +791,14 @@
 			isa = PBXTargetDependency;
 			target = AF3DBA9927EAC09C00965B8D /* AssignmentOne */;
 			targetProxy = AF3DBAB527EAC09F00965B8D /* PBXContainerItemProxy */;
+		};
+		AFB872B527FEB16800458F40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = AFB872B427FEB16800458F40 /* Nimble */;
+		};
+		AFB872B727FEB16800458F40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = AFB872B627FEB16800458F40 /* Quick */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1033,6 +1085,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFB872A927FEB11800458F40 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		AFB872AC27FEB14F00458F40 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFB872B027FEB15F00458F40 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFB872A927FEB11800458F40 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		AFB872B227FEB15F00458F40 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFB872AC27FEB14F00458F40 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		AFB872B427FEB16800458F40 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFB872A927FEB11800458F40 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		AFB872B627FEB16800458F40 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFB872AC27FEB14F00458F40 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF3DBA9227EAC09C00965B8D /* Project object */;
 }

@@ -10,7 +10,6 @@ import Quick
 import Nimble
 import Combine
 @testable import AssignmentOne
-import XCTest
 
 class TweetsRepoImplTest: QuickSpec {
     override func spec() {

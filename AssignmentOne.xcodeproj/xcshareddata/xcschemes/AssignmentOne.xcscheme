@@ -38,16 +38,6 @@
                ReferencedContainer = "container:AssignmentOne.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF3DBAB327EAC09F00965B8D"
-               BuildableName = "AssignmentOneUITests.xctest"
-               BlueprintName = "AssignmentOneUITests"
-               ReferencedContainer = "container:AssignmentOne.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

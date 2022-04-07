@@ -51,6 +51,7 @@
 		AF64B3DB27FD7C7500BAB831 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */; };
 		AF64B3DD27FD7FB700BAB831 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */; };
 		AF64B3DF27FD917200BAB831 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF64B3DE27FD917200BAB831 /* CommentView.swift */; };
+		AFB872A227FEA98600458F40 /* MessageModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB872A127FEA98600458F40 /* MessageModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		AF64B3DA27FD7C7500BAB831 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		AF64B3DC27FD7FB700BAB831 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		AF64B3DE27FD917200BAB831 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		AFB872A127FEA98600458F40 /* MessageModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -505,6 +507,7 @@
 		AFB8729C27FEA4DA00458F40 /* TimelineMessageTest */ = {
 			isa = PBXGroup;
 			children = (
+				AFB872A027FEA94200458F40 /* ViewModelTest */,
 				AFB8729D27FEA4EC00458F40 /* DomainTest */,
 			);
 			path = TimelineMessageTest;
@@ -532,6 +535,14 @@
 				AF3DBAAE27EAC09E00965B8D /* TweetsUseCaseTests.swift */,
 			);
 			path = TweetsUsecaseTest;
+			sourceTree = "<group>";
+		};
+		AFB872A027FEA94200458F40 /* ViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				AFB872A127FEA98600458F40 /* MessageModelTest.swift */,
+			);
+			path = ViewModelTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -711,6 +722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3DBAAF27EAC09E00965B8D /* TweetsUseCaseTests.swift in Sources */,
+				AFB872A227FEA98600458F40 /* MessageModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
